@@ -11,3 +11,8 @@ Create an application to search for GIF images using Giphy API (https://develope
 - Using modern Android development approaches and libraries such as Android MVVM, Coroutines, Flow, Hilt or any other jetpack compose modules;
 - Loading more results "seamlessly" before the user reaches the last item in the list so (at least on a decent network connection) the scrolling is not interrupted by the next page load;
 - Unit tests (we don't expect 100% coverage but rather see how do you approach unit testing)
+
+
+### Important!
+Add secrets.properties file in the project root and enter your API key from Giphy API
+API_KEY="{YOUR_API_KEY}"
