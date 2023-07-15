@@ -5,14 +5,10 @@ import io.include9it.native_android_giphy_search.remote.GiphyApi
 import io.include9it.native_android_giphy_search.remote.RemoteResponse
 import io.include9it.native_android_giphy_search.remote.response.GiphyResponse
 import io.include9it.native_android_giphy_search.util.Constants.API_KEY
-import javax.inject.Inject
-import javax.inject.Singleton
 
-@Singleton
-class SearchRepository @Inject constructor(
+class SearchRepository(
     private val giphyApi: GiphyApi
 ) {
-
     suspend fun searchGifs(searchText: String, pageSize: Int, pageCursor: Int): RemoteResponse<GiphyResponse> {
         val response = try {
             giphyApi.searchGifs(API_KEY, searchText, pageSize, pageCursor)
