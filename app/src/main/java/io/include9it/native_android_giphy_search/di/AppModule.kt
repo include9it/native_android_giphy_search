@@ -4,8 +4,8 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import io.include9it.native_android_giphy_search.data.SearchRepository
-import io.include9it.native_android_giphy_search.remote.GiphyApi
+import io.include9it.native_android_giphy_search.repository.SearchRepository
+import io.include9it.native_android_giphy_search.data.remote.GiphyApi
 import io.include9it.native_android_giphy_search.util.Constants.BASE_URL
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
