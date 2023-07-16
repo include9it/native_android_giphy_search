@@ -11,7 +11,6 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.mockito.Mock
-import org.mockito.Mockito.spy
 import org.mockito.Mockito.`when`
 import org.mockito.MockitoAnnotations
 
@@ -29,7 +28,7 @@ class MainViewModelTest {
     @Before
     fun setup() {
         MockitoAnnotations.openMocks(this)
-        mainViewModel = spy(MainViewModel(searchRepository))
+        mainViewModel = MainViewModel(searchRepository)
     }
 
     @Test
