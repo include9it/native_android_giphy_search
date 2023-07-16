@@ -1,4 +1,4 @@
-package io.include9it.native_android_giphy_search.remote.response
+package io.include9it.native_android_giphy_search.data.remote.response
 
 data class GiphyResponse(
     val data: List<GifResponse>,

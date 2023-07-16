@@ -1,6 +1,6 @@
-package io.include9it.native_android_giphy_search.remote
+package io.include9it.native_android_giphy_search.data.remote
 
-import io.include9it.native_android_giphy_search.remote.response.GiphyResponse
+import io.include9it.native_android_giphy_search.data.remote.response.GiphyResponse
 import retrofit2.http.*
 
 interface GiphyApi {

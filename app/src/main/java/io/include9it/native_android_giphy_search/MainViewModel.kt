@@ -4,9 +4,9 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
-import io.include9it.native_android_giphy_search.data.SearchRepository
-import io.include9it.native_android_giphy_search.remote.RemoteResponse
-import io.include9it.native_android_giphy_search.remote.response.GifResponse
+import io.include9it.native_android_giphy_search.data.remote.RemoteResponse
+import io.include9it.native_android_giphy_search.data.remote.response.GifResponse
+import io.include9it.native_android_giphy_search.repository.SearchRepository
 import io.include9it.native_android_giphy_search.util.Constants.PAGE_SIZE
 import kotlinx.coroutines.launch
 import javax.inject.Inject

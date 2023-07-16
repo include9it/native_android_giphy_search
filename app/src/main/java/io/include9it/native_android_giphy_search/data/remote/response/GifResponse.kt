@@ -1,7 +1,7 @@
-package io.include9it.native_android_giphy_search.remote.response
+package io.include9it.native_android_giphy_search.data.remote.response
 
 import com.google.gson.annotations.SerializedName
-import io.include9it.native_android_giphy_search.remote.response.image.ImagesResponse
+import io.include9it.native_android_giphy_search.data.remote.response.image.ImagesResponse
 
 data class GifResponse(
     val type: String,

@@ -1,9 +1,8 @@
-package io.include9it.native_android_giphy_search.data
+package io.include9it.native_android_giphy_search.repository
 
-import android.util.Log
-import io.include9it.native_android_giphy_search.remote.GiphyApi
-import io.include9it.native_android_giphy_search.remote.RemoteResponse
-import io.include9it.native_android_giphy_search.remote.response.GiphyResponse
+import io.include9it.native_android_giphy_search.data.remote.GiphyApi
+import io.include9it.native_android_giphy_search.data.remote.RemoteResponse
+import io.include9it.native_android_giphy_search.data.remote.response.GiphyResponse
 import io.include9it.native_android_giphy_search.util.Constants.API_KEY
 
 class SearchRepository(
@@ -13,8 +12,6 @@ class SearchRepository(
         val response = try {
             giphyApi.searchGifs(API_KEY, searchText, pageSize, pageCursor)
         } catch(e: Exception) {
-            Log.i(this.toString(), "Exception -> $e")
-
             return RemoteResponse.Error("Unknown remote error occurred.")
         }
         return RemoteResponse.Success(response)

@@ -1,4 +1,4 @@
-package io.include9it.native_android_giphy_search.remote.response.image
+package io.include9it.native_android_giphy_search.data.remote.response.image
 
 import com.google.gson.annotations.SerializedName
 

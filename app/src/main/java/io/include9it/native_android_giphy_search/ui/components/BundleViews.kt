@@ -8,7 +8,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import io.include9it.native_android_giphy_search.remote.response.GifResponse
+import io.include9it.native_android_giphy_search.data.remote.response.GifResponse
 
 @Composable
 fun GiphyRow(

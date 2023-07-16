@@ -31,7 +31,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.SubcomposeAsyncImage
 import coil.request.ImageRequest
-import io.include9it.native_android_giphy_search.remote.response.GifResponse
+import io.include9it.native_android_giphy_search.data.remote.response.GifResponse
 import io.include9it.native_android_giphy_search.util.StableWrapper
 
 @Composable

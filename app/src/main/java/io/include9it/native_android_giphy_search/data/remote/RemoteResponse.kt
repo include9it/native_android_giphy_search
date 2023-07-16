@@ -1,4 +1,4 @@
-package io.include9it.native_android_giphy_search.remote
+package io.include9it.native_android_giphy_search.data.remote
 
 sealed class RemoteResponse<T>(val data: T? = null, val message: String? = null) {
     class Success<T>(data: T) : RemoteResponse<T>(data)
